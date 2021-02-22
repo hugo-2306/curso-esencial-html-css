@@ -75,16 +75,17 @@ hr{
 
 .header-content{
     position: relative;
+
 }
 
 header{
     font-size: 14px;
     color: var(--gray10);
-    position: absolute;
     border: 1px solid red;
-    top:64px;
     width: 188px;
-    /* left: -232px; */
+    position: absolute;
+    top:64px;
+    left: -188px;
     z-index: 1;
 
 }
@@ -118,6 +119,7 @@ h3{
     margin-top:16px;
     margin-bottom:24px;
     font-weight: normal;
+    /* position: relative; */
     position: sticky;
     top:0;
     background: white;
