@@ -69,7 +69,7 @@ header{
     /* bottom 
     inset-block-end: ;*/
     /* left */
-    /* inset-inline-start: -208px; */
+    inset-inline-start: -208px;
     /* right
     inset-inline-end: ; */
     inline-size: 188px;
@@ -178,18 +178,18 @@ hr{
     display: none;
 }
 
-.main{
+/* .main{
     border: 1px solid red;
-}
+} */
 
-.main-wrapper{
-    border: 1px solid yellow;
+.wrapper{
+    /* border: 1px solid yellow; */
     max-inline-size: 902px;
     margin: auto;
 }
 
 .main-content{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-inline: 16px;
 }
 
