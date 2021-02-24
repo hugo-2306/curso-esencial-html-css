@@ -209,3 +209,37 @@ blockquote{
 blockquote p{
     color: var(--white30);
 }
+
+/* .slider{
+    border: 1px solid red;
+} */
+
+.slider-container{
+/* block-size: 100px; */
+display: block;
+overflow: auto;
+scroll-behavior: smooth;
+white-space: nowrap;
+font-size: 0;
+}
+
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+    text-align: center;
+
+}
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: var(--white30);
+    border-radius: 50%;
+
+}
