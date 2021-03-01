@@ -35,6 +35,7 @@
     --black_body: #251F24;
     --blue_border: #5551FF;
     --blue_boxshadow:#ABAAF6;
+    --blue_submit:#157Ef8;
 }
 
 body {
@@ -50,29 +51,31 @@ a {
 }
  
 .header-container{
-    position: sticky;
-    inset-block-start: -45px;
+    /* position: sticky;
+    inset-block-start: -45px; */
     
 }
 
 .header-content{
-    position: relative;
-    inset-block-start: 65px;
+    /* position: relative;
+    inset-block-start: 65px; */
+    padding-inline: 20px;
 }
 
 header{
+    margin-block-start: 20px;
     font-size: 14px;
     color: var(--white30);
-    position: absolute;
+    /* position: absolute; */
     /* top */
-    inset-block-start: 0;
+    /* inset-block-start: 0; */
     /* bottom 
     inset-block-end: ;*/
     /* left */
-    inset-inline-start: -208px;
+    /* inset-inline-start: -208px; */
     /* right
     inset-inline-end: ; */
-    inline-size: 188px;
+    /* inline-size: 188px; */
 }
 
 header li{
@@ -98,8 +101,8 @@ nav details summary{
 } */
 
 h1{
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
@@ -130,7 +133,7 @@ p{
 
 .hero{
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    height: 350px;
+    block-size: 50px;
     /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover */;
@@ -242,4 +245,65 @@ font-size: 0;
     background: var(--white30);
     border-radius: 50%;
 
+}
+
+.form input{
+    inline-size: 100%;
+    border: 1px solid var(--white30);
+    background:var(--black_body);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+
+
+}
+
+.form input::-webkit-input-placeholder{
+    color: var(--white20);
+}
+
+.form input[type="submit"]{
+    background: var(--blue_submit);
+}
+
+@media screen and (min-width: 1366px){
+    
+    .hero{
+        block-size: 350px;
+    }
+
+    .header-container{
+        position: sticky;
+        inset-block-start: -45px;
+        
+    }
+    
+    .header-content{
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+    
+    header{
+        position: absolute;
+        /* top */
+        inset-block-start: 0;
+        /* bottom 
+        inset-block-end: ;*/
+        /* left */
+        inset-inline-start: -208px;
+        /* right
+        inset-inline-end: ; */
+        inline-size: 188px;
+    }
+
+    h1{
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
 }
